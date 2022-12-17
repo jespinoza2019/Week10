@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wk 10 DOM</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+<body>
+  <div class="container-fluid text-center text-capitalize">
+    <h2>List of Bills </h2>
+  </div>
+  <div class="container p-2 bg-primary " >
+   
+   <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+                    <label for="new-bill">Bill</label>
+                    <input type="text" class="form-control" id="new-bill" placeholder="Name on Bill">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-balance">Current Balance</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" id="new-balance">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-due-date">Due Date</label>
+                    <input type="date" class="form-control" id="new-due-date">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-paid-date">Date Paid</label>
+                    <input type="date" class="form-control" id="new-paid-date">
+                </div>
+             </div>
+      </div>
+      <div class="row">
+              <div class="col-sm">
+                <label for="new-amount-due">Amount Due</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" id="new-amount-due">
+                </div>
+            </div>
+            <div class="col-sm">
+              <label for="new-amount-paid">Amount Paid</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" id="new-amount-paid">
+              </div>
+          </div>
+        </div>
+    </div>
+    <div>
+      <button id="submit" class="btn btn-primary from-control">Submit</button>
+     </div>
+  </div>
+</div>
+  <div class="container p-2">
+  <table id="list" class="table table-light table-striped">
+    <tr>
+        <th>Bill</th>
+        <th>Balance</th>
+        <th>Date Due</th>
+        <th>Date Paid</th>
+        <th>Amount Due</th>
+        <th>Amount Paid</th>
+        <th>Remainder</th>
+    </tr>
+
+</table>
+</div>  
+
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="script.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
